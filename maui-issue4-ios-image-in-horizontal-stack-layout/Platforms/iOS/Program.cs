@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace maui_issue2_ios_stacklayout_scroll;
+namespace maui_issue4_ios_image_in_horizontal_stack_layout;
 
 public class Program
 {

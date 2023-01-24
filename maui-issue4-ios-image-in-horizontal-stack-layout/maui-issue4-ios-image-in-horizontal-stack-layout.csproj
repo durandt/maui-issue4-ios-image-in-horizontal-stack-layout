@@ -6,16 +6,16 @@
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
 		<OutputType>Exe</OutputType>
-		<RootNamespace>maui_issue2_ios_stacklayout_scroll</RootNamespace>
+		<RootNamespace>maui_issue4_ios_image_in_horizontal_stack_layout</RootNamespace>
 		<UseMaui>true</UseMaui>
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>maui-issue2-ios-stacklayout-scroll</ApplicationTitle>
+		<ApplicationTitle>maui-issue4-ios-image-in-horizontal-stack-layout</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.maui_issue2_ios_stacklayout_scroll</ApplicationId>
+		<ApplicationId>com.companyname.maui_issue4_ios_image_in_horizontal_stack_layout</ApplicationId>
 		<ApplicationIdGuid>af64c3bd-516b-4ec9-a769-12eb9cd687cd</ApplicationIdGuid>
 
 		<!-- Versions -->

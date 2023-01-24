@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vms="clr-namespace:maui_issue4_ios_image_in_horizontal_stack_layout.ViewModels"
+             x:DataType="vms:MainViewModel"
+             x:Class="maui_issue4_ios_image_in_horizontal_stack_layout.MainPage"
+             Title="iOS Image in HorizontalStackLayout">
+
+    <ScrollView x:Name="_ScrollView">
+        <StackLayout Padding="16" Spacing="24">
+            <StackLayout>
+                <Label Text="No height request" FontSize="Header" Padding="4" VerticalOptions="Center"/>
+                <StackLayout Orientation="Horizontal" Padding="4" Spacing="8" BackgroundColor="#ebf7f9">
+                    <Label Text="Horizontal StackLayout" VerticalOptions="Center"/>
+                    <Image Source="house.png" />
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Padding="4" Spacing="8" BackgroundColor="#f9edeb">
+                    <Label Text="Vertical StackLayout" VerticalOptions="Center"/>
+                    <Image Source="house.png" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Height request 64px" FontSize="Header" Padding="4" VerticalOptions="Center"/>
+                <StackLayout Orientation="Horizontal" Padding="4" Spacing="8" BackgroundColor="#ebf7f9">
+                    <Label Text="Horizontal StackLayout" VerticalOptions="Center"/>
+                    <Image Source="house.png" HeightRequest="64" />
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Padding="4" Spacing="8" BackgroundColor="#f9edeb">
+                    <Label Text="Vertical StackLayout" VerticalOptions="Center"/>
+                    <Image Source="house.png" HeightRequest="64" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
+

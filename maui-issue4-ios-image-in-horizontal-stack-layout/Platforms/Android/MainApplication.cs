@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace maui_issue2_ios_stacklayout_scroll;
+namespace maui_issue4_ios_image_in_horizontal_stack_layout;
 
 [Application]
 public class MainApplication : MauiApplication

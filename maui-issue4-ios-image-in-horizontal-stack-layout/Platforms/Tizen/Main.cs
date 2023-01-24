@@ -2,7 +2,7 @@
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace maui_issue2_ios_stacklayout_scroll;
+namespace maui_issue4_ios_image_in_horizontal_stack_layout;
 
 class Program : MauiApplication
 {

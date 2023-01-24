@@ -1,30 +1,37 @@
+## Title
+
+[iOS] Image.HeightRequest not respected when Image added in an Horizontal StackLayout
+
 ## Description
 
-On iOS, ScrollView does not detect content size change within StackLayout,
-not allowing to scroll when a StackLayout within a ScrollView is filled after
-the view was attached.
+Adding an `Image` in an horizontal `StackLayout` and setting the Image's `HeightRequest` to
+something different than the underlying image Height is rendered differently on iOS and Android. 
+
+On iOS, Image in an horizontal StackLayout does not respect HeightRequest and always shows
+the image with its original size.
+
+On Android, the Image is scaled correctly with regard to the HeightRequest property. 
+
+This is not an issue when using vertical `StackLayout` or `Grid`. 
 
 ## Github issues
 
-* dotnet/maui#8820
-* dotnet/maui#9209
+* dotnet/maui#123456
 
 ## Steps to Reproduce
 
-Run the attached sample on iOS
-* Hit the _Add many items_ Button
-  * 30 items are added to the view, filling the whole space but scrolling is not possible
-* Hit the _Fix bug_ Switch (turn on)
-* Hit the _Add many items_ Button
-  * You can now scroll the view and see the 60 items in the list
-* Hit the _Fix bug_ Switch (turn off)
-* Hit the _Add many items_ Button
-  * You can only scroll past the first 60 items
-* Hit the _InvalidateMeasure_ button
-  * You can now scroll the view and see the 90 items in the list
+* Create a `StackLayout` with Horizontal orientation
+* Add an `Image` children to the StackLayout and set its `HeightRequest` to something else
+than its original height. 
+
+OR
+
+Run the attached sample on iOS and Android and compare the rendered views. (See screenshots below)
+
+![Screenshot showing expected result on Android, Image is scaling](./maui-issue4-android.png) ![Screenshot showing unexpected result on iOS, Image is NOT scaling](./maui-issue4-ios.png)
 
 ## Version with bug
-7.0.100 (current)
+7.0.102 (current)
 
 ## Last version that worked well
 Unknown
@@ -33,11 +40,10 @@ Unknown
 iOS
 
 ## Affected platform versions
-iOS 16.2 (and probably all earlier versions)
+iOS 16.2
 
 ## Did you find any workaround?
-Bind the `StackLayout.PropertyChanged` event and call `InvalidateMeasure` on the ScrollView
-whenever the StackLayout's `Height` or `Width` property is changed.
+Avoid wrapping Images in horizontal StackLayouts
 
 ## Relevant log output
 No response

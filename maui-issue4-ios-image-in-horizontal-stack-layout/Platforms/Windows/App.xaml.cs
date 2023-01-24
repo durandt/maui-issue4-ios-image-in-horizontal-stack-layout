@@ -3,7 +3,7 @@
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-namespace maui_issue2_ios_stacklayout_scroll.WinUI;
+namespace maui_issue4_ios_image_in_horizontal_stack_layout.WinUI;
 
 /// <summary>
 /// Provides application-specific behavior to supplement the default Application class.

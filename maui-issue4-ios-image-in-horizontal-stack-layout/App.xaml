@@ -1,8 +1,8 @@
 ﻿<?xml version = "1.0" encoding = "UTF-8" ?>
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:maui_issue2_ios_stacklayout_scroll"
-             x:Class="maui_issue2_ios_stacklayout_scroll.App">
+             xmlns:local="clr-namespace:maui_issue4_ios_image_in_horizontal_stack_layout"
+             x:Class="maui_issue4_ios_image_in_horizontal_stack_layout.App">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

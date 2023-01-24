@@ -1,9 +1,9 @@
 ﻿<maui:MauiWinUIApplication
-    x:Class="maui_issue2_ios_stacklayout_scroll.WinUI.App"
+    x:Class="maui_issue4_ios_image_in_horizontal_stack_layout.WinUI.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:maui="using:Microsoft.Maui"
-    xmlns:local="using:maui_issue2_ios_stacklayout_scroll.WinUI">
+    xmlns:local="using:maui_issue4_ios_image_in_horizontal_stack_layout.WinUI">
 
 </maui:MauiWinUIApplication>
 

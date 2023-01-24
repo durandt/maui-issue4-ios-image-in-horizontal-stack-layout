@@ -1,7 +1,7 @@
 ﻿using System;
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace maui_issue2_ios_stacklayout_scroll.ViewModels.Base;
+namespace maui_issue4_ios_image_in_horizontal_stack_layout.ViewModels.Base;
 
 public abstract partial class ViewModelBase : ObservableObject, IViewModel
 {

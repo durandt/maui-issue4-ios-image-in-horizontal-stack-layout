@@ -1,9 +1,9 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using CommunityToolkit.Mvvm.ComponentModel;
-using maui_issue2_ios_stacklayout_scroll.ViewModels.Base;
+using maui_issue4_ios_image_in_horizontal_stack_layout.ViewModels.Base;
 
-namespace maui_issue2_ios_stacklayout_scroll.ViewModels;
+namespace maui_issue4_ios_image_in_horizontal_stack_layout.ViewModels;
 
 public partial class MainViewModel : ViewModelBase
 {
