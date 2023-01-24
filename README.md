@@ -16,7 +16,7 @@ This is not an issue when using vertical `StackLayout` or `Grid`.
 
 ## Github issues
 
-* dotnet/maui#123456
+* dotnet/maui#12879
 
 ## Steps to Reproduce
 
